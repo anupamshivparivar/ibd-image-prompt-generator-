@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#451a03" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#1c1917" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#080705" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="60%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="divineGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGlow)"/>
+  <!-- Outer Sacred Border -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="4" opacity="0.6"/>
+  <circle cx="256" cy="256" r="198" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="8 6" opacity="0.8"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.9"/>
+  <!-- Radiating Sacred Rays -->
+  <g stroke="url(#goldGrad)" stroke-width="2" opacity="0.5">
+    <line x1="256" y1="60" x2="256" y2="90"/>
+    <line x1="256" y1="422" x2="256" y2="452"/>
+    <line x1="60" y1="256" x2="90" y2="256"/>
+    <line x1="422" y1="256" x2="452" y2="256"/>
+    <line x1="118" y1="118" x2="140" y2="140"/>
+    <line x1="372" y1="372" x2="394" y2="394"/>
+    <line x1="118" y1="394" x2="140" y2="372"/>
+    <line x1="372" y1="140" x2="394" y2="118"/>
+  </g>
+  <!-- Center Sacred Trishul & Om Emblem -->
+  <g filter="url(#divineGlow)" fill="url(#goldGrad)">
+    <!-- Trishul prongs -->
+    <path d="M 256 120 L 256 360" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 256 110 L 244 145 L 268 145 Z"/>
+    <path d="M 220 180 C 220 250 256 260 256 260 C 256 260 292 250 292 180" fill="none" stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 220 170 L 210 195 L 230 195 Z"/>
+    <path d="M 292 170 L 282 195 L 302 195 Z"/>
+    <!-- Damru motif -->
+    <polygon points="236,290 276,290 244,320 268,320" fill="url(#goldGrad)"/>
+    <!-- Central Lotus Base -->
+    <path d="M 180 370 Q 256 420 332 370 Q 256 395 180 370 Z" fill="url(#goldGrad)"/>
+  </g>
+  <!-- Text Label -->
+  <text x="256" y="445" text-anchor="middle" font-family="'Cinzel', serif" font-weight="bold" font-size="28" fill="#fcd34d" letter-spacing="4">IBD STUDIO</text>
+</svg>

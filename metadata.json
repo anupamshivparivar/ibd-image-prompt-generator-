@@ -1,0 +1,7 @@
+{
+  "name": "IBD Universal Studio Suite | V1-V14",
+  "description": "The Sovereign IBD Production Intelligence Suite: PWA-enabled with standalone install on Android & iOS, GitHub publishing arrangement, Sri Shiva Mahamantra & Stotras Suite, Sundarkand & Ramcharitmanas 7-Kaand Studio, Shrimad Bhagavad Gita 18-Chapter Studio, Krishna Suvichar 9:16 Shorts Studio, Daily 9:16 Shorts & Reels Studio, Temple Sanctuary Engine, V25 Command Engine, V24 Aarti Engine, V23 Daywise Rotation, V22 Living Cosmic Darshan, V26 Carousel Engine, V15–V21 Sovereign Deck, and 54 verified sacred texts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
