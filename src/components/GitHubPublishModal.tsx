@@ -13,16 +13,16 @@ export const GitHubPublishModal: React.FC<GitHubPublishModalProps> = ({ isOpen, 
 
   const gitCommands = [
     {
-      title: '1. Initialize Git Repository & Commit',
-      command: 'git init\ngit add .\ngit commit -m "feat: Initial release of IBD Universal Studio Suite with PWA"',
+      title: '1. Link Remote GitHub Repository (Local repo already committed on main)',
+      command: 'git remote add origin https://github.com/anupamskm/ibd-universal-studio.git',
     },
     {
-      title: '2. Link Remote GitHub Repository',
-      command: 'git remote add origin https://github.com/YOUR_USERNAME/ibd-universal-studio.git',
-    },
-    {
-      title: '3. Push to Main Branch',
+      title: '2. Push Main Branch to GitHub',
       command: 'git branch -M main\ngit push -u origin main',
+    },
+    {
+      title: 'Optional: Fresh Initialize (if starting from downloaded ZIP)',
+      command: 'git init -b main\ngit add .\ngit commit -m "feat: IBD Universal Studio Suite with L1-L30 Master Tool, Cinema & Samplers, and PWA"',
     },
   ];
 
